@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "target": "es2018",
+    "sourceMap": true,
+    "module": "commonjs",
+    "jsx": "preserve",
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "lib": ["dom", "dom.iterable", "esnext", "es2019"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {},
+    "allowJs": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+  ]
+}

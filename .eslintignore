@@ -1,0 +1,5 @@
+*/**.js
+*/**.d.ts
+packages/*/dist
+packages/*/node_modules
+packages/*/.next/
