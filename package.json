@@ -1,12 +1,8 @@
 {
-  "name": "graphql_nextjs_express_typescript",
+  "name": "ideal_monorepo",
   "version": "0.0.1",
-  "description": "A monorepo for graphql boilerplate",
+  "description": "My ideal monorepo with prisma, typescript, graphql, nextjs, tailwind",
   "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/patheticGeek/graphql_nextjs_express_typescript.git"
-  },
   "keywords": [
     "graphql",
     "express",
@@ -15,10 +11,11 @@
   ],
   "author": "patheticGeek",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/patheticGeek/graphql_nextjs_express_typescript/issues"
+  "homepage": "https://github.com/patheticGeek/ideal_monorepo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/patheticGeek/ideal_monorepo.git"
   },
-  "homepage": "https://github.com/patheticGeek/graphql_nextjs_express_typescript#readme",
   "workspaces": [
     "packages/*",
     "apps/*",

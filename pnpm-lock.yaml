@@ -44,10 +44,7 @@ importers:
       typescript: 4.7.2
 
   apps/client:
-    specifiers:
-      next: ^12.1.6
-    dependencies:
-      next: 12.1.6_react-dom@18.1.0+react@18.1.0
+    specifiers: {}
 
   server/core:
     specifiers:
