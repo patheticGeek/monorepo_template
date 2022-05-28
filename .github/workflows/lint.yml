@@ -1,9 +1,9 @@
-name: TSC
+name: Lint
 
 on: [push]
 
 jobs:
-  tsc:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
