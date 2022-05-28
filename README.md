@@ -27,7 +27,9 @@ Custom paths are used for referring to packages. Like `@packages/graphql`, `@app
 
 ### Graphql
 
-The schema file is at the root of repo (`schema.graphql`) and `graphql-codegen` is used for generating types for server & client both.
+The schema file is at the root of repo (`schema.graphql`)
+
+`graphql-codegen` is used for generating types for server & client both (config file `graphql.codegen.yml`).
 
 Generated files are available at
 
@@ -67,3 +69,7 @@ Just used as a glorified parallel task runner when running lint/prettier/dev acr
 ### Eslint/Prettier
 
 For linting these are used, have extended from the config I prefer.
+
+## Todo
+
+- [ ] Add ssr for apollo client
