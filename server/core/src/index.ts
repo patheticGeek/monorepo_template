@@ -2,8 +2,11 @@ import cors from 'cors'
 import express from 'express'
 import morgan from 'morgan'
 
+import { PrismaClient } from '@prisma/client'
+
 const PORT = process.env.PORT || 5000
 const app = express()
+const prisma = new PrismaClient()
 
 app.use(cors())
 app.use(morgan('dev'))
@@ -19,4 +22,6 @@ const main = async () => {
   })
 }
 
-main()
+main().finally(async () => {
+  await prisma.$disconnect()
+})
