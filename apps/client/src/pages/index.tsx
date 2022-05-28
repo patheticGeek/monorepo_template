@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useTestQuery } from '@packages/graphql/generated'
+import { useTestQuery } from '@packages/graphql/client'
 
 export default function Index() {
   const { data, loading } = useTestQuery({

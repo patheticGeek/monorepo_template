@@ -1,5 +1,5 @@
 import { GraphqlContext } from '@packages/graphql'
-import { Resolvers } from '@packages/graphql/generated'
+import { Resolvers } from '@packages/graphql/server'
 
 import queryResolvers from './query'
 

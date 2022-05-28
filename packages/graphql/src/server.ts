@@ -7,8 +7,10 @@ import { ApolloServer } from 'apollo-server-express'
 import { PrismaClient } from '@prisma/client'
 
 import { createContext } from './utils/createContext'
-import { Resolvers } from './generated'
+import { Resolvers } from './generated-server'
 import { GraphqlContext } from './types'
+
+export * from './generated-server'
 
 export const createGraphqlServer = ({
   prisma,

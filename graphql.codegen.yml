@@ -4,13 +4,18 @@ schema: 'http://localhost:5000/graphql'
 documents: '**/*.graphql'
 
 generates:
-  packages/graphql/src/generated.tsx:
+  packages/graphql/src/generated-server.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
+
+  packages/graphql/src/generated-client.tsx:
     plugins:
       - 'typescript'
       - 'typescript-operations'
       - 'typescript-resolvers'
       - 'typescript-react-apollo'
-      - 'typescript-resolvers'
+
   packages/graphql/src/generated.schema.json:
     plugins:
       - 'introspection'

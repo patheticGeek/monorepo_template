@@ -7,6 +7,8 @@ import {
   InMemoryCache
 } from '@apollo/client'
 
+export * from './generated-client'
+
 const httpLink = new HttpLink({
   uri: `http://localhost:5000/graphql`,
   fetch

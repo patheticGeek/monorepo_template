@@ -1,5 +1,5 @@
 import { GraphqlContext } from '@packages/graphql'
-import { QueryResolvers } from '@packages/graphql/generated'
+import { QueryResolvers } from '@packages/graphql/server'
 
 const queryResolvers: QueryResolvers<GraphqlContext> = {
   test: async (_parent, args, _context, _info) => {
