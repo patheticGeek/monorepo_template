@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@modfy/eslint-config": "^0.1.1",
+    "esbuild": "^0.14.41",
     "express": "^4.18.1",
     "next": "^12.1.6",
     "react": "^18.1.0",
