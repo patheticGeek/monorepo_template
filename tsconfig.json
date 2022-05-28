@@ -22,18 +22,17 @@
     "isolatedModules": true,
     "experimentalDecorators": true,
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@apps/client*": ["apps/client/src*"]
+    },
     "allowJs": true,
     "noEmit": true
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "exclude": ["node_modules", "dist"],
   "include": [
     "packages/**/*.ts",
     "packages/**/*.tsx",
     "apps/**/*.ts",
-    "apps/**/*.tsx",
+    "apps/**/*.tsx"
   ]
 }
