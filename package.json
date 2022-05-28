@@ -12,7 +12,8 @@
     "build": "turbo run build",
     "client:dev": "turbo run dev --filter=@server/core --filter=@apps/client",
     "server:dev": "turbo run dev --filter=@server/core",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "prepare": "husky install"
   },
   "keywords": [
     "graphql",
@@ -53,7 +54,9 @@
     "@modfy/eslint-config": "^0.1.1",
     "esbuild": "^0.14.41",
     "express": "^4.18.1",
+    "husky": "^8.0.1",
     "next": "^12.1.6",
+    "pretty-quick": "^3.1.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }
