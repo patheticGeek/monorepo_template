@@ -2,7 +2,10 @@ import cors from 'cors'
 import express from 'express'
 import morgan from 'morgan'
 
+import { createGraphqlServer } from '@packages/graphql/server'
 import { PrismaClient } from '@prisma/client'
+
+import resolvers from './resolvers'
 
 const PORT = process.env.PORT || 5000
 const app = express()
@@ -17,8 +20,15 @@ app.get('/', (_, res) => {
 })
 
 const main = async () => {
+  const graphqlServer = createGraphqlServer({ prisma, resolvers })
+
+  await graphqlServer.start()
+  graphqlServer.applyMiddleware({ app, cors: { origin: '*' } })
+
   app.listen(PORT, () => {
-    console.log(`🚀 Server up on http://localhost:${PORT}`)
+    console.log(
+      `🚀 Server running at http://localhost:${PORT}${graphqlServer.graphqlPath}`
+    )
   })
 }
 

@@ -1,11 +1,8 @@
 {
-  "name": "@apps/client",
+  "name": "@packages/graphql",
   "version": "0.1.0",
-  "private": true,
+  "main": "src/index.tsx",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "prettier": "prettier --check src/**/*.ts*",
     "prettier:fix": "prettier --write src/*",
     "lint": "eslint . --ext .ts,.tsx",
@@ -13,7 +10,14 @@
     "verify": "run-p prettier lint",
     "verify:fix": "yarn prettier:fix && yarn lint:fix"
   },
+  "license": "ISC",
   "dependencies": {
-    "@packages/graphql": "workspace:^0.1.0"
+    "@apollo/client": "^3.6.5",
+    "apollo-server": "^3.8.1",
+    "apollo-server-core": "^3.8.1",
+    "apollo-server-express": "^3.8.1",
+    "cross-fetch": "^3.1.5",
+    "graphql": "^16.5.0",
+    "universal-cookie": "^4.0.4"
   }
 }

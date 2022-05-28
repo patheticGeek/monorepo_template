@@ -23,12 +23,14 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
-      "@apps/client*": ["apps/client/src*"]
+      "@apps/client*": ["apps/client/src*"],
+      "@server/core/*": ["server/core/src*"],
+      "@packages/graphql*": ["packages/graphql/src*"]
     },
     "allowJs": true,
     "noEmit": true
   },
-  "exclude": ["node_modules", "dist"],
+  "exclude": ["node_modules", "dist", ".turbo", ".next"],
   "include": [
     "packages/**/*.ts",
     "packages/**/*.tsx",

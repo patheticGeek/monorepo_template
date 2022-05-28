@@ -3,5 +3,5 @@
   "compilerOptions": {
     "noEmit": true
   },
-  "include": ["next-env.d.ts", "src/"]
+  "include": ["next-env.d.ts", "src/", "next.config.js"]
 }
