@@ -1,6 +1,12 @@
+import { GetServerSideProps } from 'next'
 import React from 'react'
 
-import { useTestQuery } from '@packages/graphql/client'
+import {
+  createGraphqlClient,
+  dehydrateGraphqlClient,
+  TestDocument,
+  useTestQuery
+} from '@packages/graphql/client'
 
 export default function Index() {
   const { data, loading } = useTestQuery({
@@ -16,4 +22,15 @@ export default function Index() {
       ) : null}
     </div>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const client = createGraphqlClient()
+
+  await client.query({
+    query: TestDocument,
+    variables: { name: 'World' }
+  })
+
+  return { props: { ...dehydrateGraphqlClient(client) } }
 }

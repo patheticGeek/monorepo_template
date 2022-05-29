@@ -72,8 +72,11 @@ importers:
   apps/client:
     specifiers:
       '@packages/graphql': workspace:^0.1.0
+      encoding: ^0.1.13
     dependencies:
       '@packages/graphql': link:../../packages/graphql
+    devDependencies:
+      encoding: 0.1.13
 
   packages/graphql:
     specifiers:
@@ -104,12 +107,14 @@ importers:
       express: ^4.18.1
       morgan: ^1.10.0
       nodemon: ^2.0.16
+      source-map-support: ^0.5.21
     dependencies:
       '@packages/graphql': link:../../packages/graphql
       cors: 2.8.5
       express: 4.18.1
       morgan: 1.10.0
       nodemon: 2.0.16
+      source-map-support: 0.5.21
     devDependencies:
       '@pathetic_geek/tsx': 0.0.1
       '@types/cors': 2.8.12
@@ -4131,6 +4136,12 @@ packages:
     engines: {node: '>= 0.8'}
     dev: false
 
+  /encoding/0.1.13:
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    dependencies:
+      iconv-lite: 0.6.3
+    dev: true
+
   /end-of-stream/1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
     dependencies:
@@ -5645,6 +5656,13 @@ packages:
     dependencies:
       safer-buffer: 2.1.2
     dev: false
+
+  /iconv-lite/0.6.3:
+    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: 2.1.2
+    dev: true
 
   /ieee754/1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
@@ -7462,7 +7480,6 @@ packages:
 
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
-    dev: false
 
   /sane/5.0.1:
     resolution: {integrity: sha512-9/0CYoRz0MKKf04OMCO3Qk3RQl1PAwWAhPSQSym4ULiLpTZnrY1JoZU0IEikHu8kdk2HvKT/VwQMq/xFZ8kh1Q==}

@@ -15,5 +15,8 @@
   },
   "dependencies": {
     "@packages/graphql": "workspace:^0.1.0"
+  },
+  "devDependencies": {
+    "encoding": "^0.1.13"
   }
 }
