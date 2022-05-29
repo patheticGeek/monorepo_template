@@ -1,4 +1,4 @@
-# Ideal monorepo
+# Monorepo Template
 
 Wanted to setup this from scratch to learn what all to use when doing such a thing. So here it is.
 

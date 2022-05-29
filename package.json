@@ -1,7 +1,7 @@
 {
-  "name": "ideal_monorepo",
+  "name": "monorepo_template",
   "version": "0.0.1",
-  "description": "My ideal monorepo with prisma, typescript, graphql, nextjs, tailwind",
+  "description": "My monorepo template with prisma, typescript, graphql, nextjs, tailwindcss",
   "scripts": {
     "prettier": "turbo run prettier",
     "prettier:fix": "turbo run prettier:fix",
@@ -27,14 +27,14 @@
     "nextjs",
     "typescript",
     "prisma",
-    "tailwind"
+    "tailwindcss"
   ],
   "author": "patheticGeek",
   "license": "ISC",
-  "homepage": "https://github.com/patheticGeek/ideal_monorepo#readme",
+  "homepage": "https://github.com/patheticGeek/monorepo_template#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/patheticGeek/ideal_monorepo.git"
+    "url": "git+ssh://git@github.com/patheticGeek/monorepo_template.git"
   },
   "workspaces": [
     "packages/*",
